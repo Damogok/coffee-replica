@@ -19,7 +19,8 @@ module.exports = {
         "poppins-medium": ['poppins-medium'],
         "poppins-semibold": ['poppins-semibold'],
         "poppins-bold": ['poppins-bold'],
-        "poppins-extrabold": ['poppins-extrabold']
+        "poppins-extrabold": ['poppins-extrabold'],
+        "copperplate": ['copperplate'],
       }
     },
   },

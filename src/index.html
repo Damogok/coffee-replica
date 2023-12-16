@@ -14,12 +14,13 @@
     <title>Document</title>
 </head>
 
-<body class="max-w-[2000px] mx-auto">
-    <div class="bg-hero-image bg-cover h-[70vh]">
+<body class="md:max-w-[2000px] mx-auto">
+    <div class="bg-hero-image bg-cover md:h-[70vh] h-[50vh]">
         <div class="bg-black h-full bg-opacity-60">
-            <div class="flex max-w-[1250px] mx-auto pt-10 items-center justify-between">
-                <div class="text-primary-white  text-3xl font-semibold"><span class="font-serif">COFFEE</span></div>
-                <div>
+            <div class="md:flex max-w-[1250px] mx-auto pt-10 items-center justify-between ">
+                <div class="text-primary-white  text-3xl hidden md:block"><span class="font-copperplate"><span
+                            class="text-4xl">C</span>OFFEE</span></div>
+                <div class="hidden md:block">
                     <ul class="text-sm flex text-primary-white gap-10 font-poppins-regular">
                         <li class=""><a href="#">HOME</a></li>
                         <li class=""><a href="#">COFFEE</a></li>
@@ -29,7 +30,7 @@
                         <li class=""><a href="#">LOGIN</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="hidden  md:block">
                     <i class="fa-solid fa-magnifying-glass text-2xl text-primary-white"></i>
                 </div>
             </div>
@@ -38,11 +39,11 @@
 
 
             <!-- FIRST SECTION -->
-            <section class="mt-32 max-w-[1100px] mx-auto">
+            <section class="md:mt-32 mt-10 md:max-w-[1100px] px-6 mx-auto font-poppins">
                 <div class="">
                     <h2 class="text-primary-white font-medium text-2xl font-poppins-regular mb-3">welcome!</h2>
-                    <p class="text-primary-white text-4xl font-semibold leading-[50px]">We serve the richest coffee
-                        <br>in the city!
+                    <p class="text-primary-white md:text-4xl text-3xl font-semibold leading-[50px]">We serve the richest
+                        <br>coffee in the city!
                     </p>
                     <button
                         class="bg-primary-white rounded-full px-7 py-3 text-xs font-bold mt-5 text-primary-brown">Order
@@ -55,23 +56,23 @@
 
 
     <!-- SECOND SECTION -->
-    <section class="py-16 bg-light-coffee">
-        <div class="flex justify-center gap-32 opacity-70">
+    <section class="py-16 bg-light-coffee font-poppins-regular">
+        <div class="flex justify-center md:gap-32 gap-8 opacity-70 mx-6">
             <div class="text-center">
-                <i class="fas fa-mug-hot text-5xl text-primary-brown mb-2"></i>
-                <p class="text-xs text-primary-brown">Hot Coffee</p>
+                <i class="fas fa-mug-hot md:text-5xl text-4xl text-primary-brown mb-2"></i>
+                <p class="text-[10px] text-primary-brown">Hot Coffee</p>
             </div>
             <div class="text-center">
-                <i class="fas fa-trophy text-5xl text-primary-brown mb-2"></i>
-                <p class="text-xs  text-primary-brown">Cold Cofee</p>
+                <i class="fas fa-trophy md:text-5xl text-4xl text-primary-brown mb-2"></i>
+                <p class="text-[10px]   text-primary-brown">Cold Cofee</p>
             </div>
             <div class="text-center">
-                <i class="fa-solid fa-layer-group text-5xl text-primary-brown mb-2"></i>
-                <p class="text-xs text-primary-brown">Cup Cofee</p>
+                <i class="fa-solid fa-layer-group md:text-5xl text-4xl text-primary-brown mb-2"></i>
+                <p class="text-[10px] text-primary-brown">Cup Cofee</p>
             </div>
             <div class="text-center">
-                <i class="fas fa-trophy text-5xl text-primary-brown mb-2"></i>
-                <p class="text-xs text-primary-brown">Cold Cofee</p>
+                <i class="fas fa-trophy md:text-5xl text-4xl text-primary-brown mb-2"></i>
+                <p class="text-[10px] text-primary-brown">Cold Cofee</p>
             </div>
         </div>
 
@@ -81,13 +82,13 @@
 
 
     <!-- Our special coffe /Our special dessert -->
-    <section class="max-w-[1100px] mx-auto mb-16">
+    <section class=" mx-auto mb-16 font-poppins">
 
         <div class="bg-white h-auto">
             <div>
                 <h2 class="text-center mt-16 mb-5 font-bold text-2xl text-primary-brown">OUR SPECIAL COFFEE</h2>
-                <div class="flex justify-between">
-                    <div class="bg-light-coffee bg-opacity-60 p-2 rounded-lg">
+                <div class="grid grid-cols-4 gap-60 overflow-x-auto mx-6 md:hidden">
+                    <div class="bg-light-coffee bg-opacity-60 p-2 rounded-lg md:h-auto w-56">
                         <div class="relative "><img class="w-60 h-80 rounded-lg" src="images/cof1.jpg" alt="">
                             <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
                         </div>
@@ -96,14 +97,14 @@
                             <p class="text-[8px] font-semibold  text-primary-brown">Lorem ipsum dolor, sit amet </p>
                         </div>
                         <div class="flex justify-between mt-2">
-                            <p class="font-extrabold  text-primary-brown">Rs.199</p>
+                            <p class="font-extrabold text-lg  text-primary-brown">Rs.199</p>
                             <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
                                 now</button>
                         </div>
                     </div>
 
 
-                    <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60">
+                    <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60 w-56">
                         <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof2.jpg" alt="">
                             <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
                         </div>
@@ -119,7 +120,7 @@
                     </div>
 
 
-                    <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60">
+                    <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60 w-56">
                         <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof3.jpg" alt="">
                             <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
                         </div>
@@ -135,7 +136,73 @@
                     </div>
 
 
-                    <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60">
+                    <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60 w-56">
+                        <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof4.jpg" alt="">
+                            <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
+                            <p class="text-[8px] font-semibold  text-primary-brown">Lorem ipsum dolor, sit amet </p>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <p class="font-extrabold  text-primary-brown">Rs.199</p>
+                            <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
+                                now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  MOBILE    -->
+                <div class="md:flex justify-center gap-5 mx-6 md:mx-auto w-full hidden">
+                    <div class="bg-light-coffee bg-opacity-60 p-2 rounded-lg md:h-auto w-56">
+                        <div class="relative "><img class="md:w-60 md:h-80 rounded-lg" src="images/cof1.jpg" alt="">
+                            <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
+                            <p class="text-[8px] font-semibold  text-primary-brown">Lorem ipsum dolor, sit amet </p>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <p class="font-extrabold text-lg  text-primary-brown">Rs.199</p>
+                            <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
+                                now</button>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60 w-56">
+                        <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof2.jpg" alt="">
+                            <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
+                            <p class="text-[8px] text-primary-brown font-semibold">Lorem ipsum dolor, sit amet </p>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <p class="font-extrabold  text-primary-brown">Rs.199</p>
+                            <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
+                                now</button>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60 w-56">
+                        <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof3.jpg" alt="">
+                            <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
+                            <p class="text-[8px] font-semibold  text-primary-brown">Lorem ipsum dolor, sit amet </p>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <p class="font-extrabold  text-primary-brown">Rs.199</p>
+                            <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
+                                now</button>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60 w-56">
                         <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof4.jpg" alt="">
                             <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
                         </div>
@@ -154,90 +221,160 @@
             </div>
 
             <!-- OUR SPECIAL DESSERT -->
-
-
-            <div>
-                <h2 class="text-center mt-16 mb-5 font-bold text-2xl text-primary-brown mb">OUR SPECIAL DESSERT</h2>
-                <div class="flex justify-between">
-                    <div class="bg-light-coffee bg-opacity-60 p-2 rounded-lg">
-                        <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof5.jpg" alt="">
-                            <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
+            <div class="bg-white h-auto">
+                <div>
+                    <h2 class="text-center mt-16 mb-5 font-bold text-2xl text-primary-brown">OUR SPECIAL DESSERT</h2>
+                    <div class="grid grid-cols-4 gap-60 overflow-x-auto mx-6 md:hidden">
+                        <div class="bg-light-coffee bg-opacity-60 p-2 rounded-lg md:h-auto w-56">
+                            <div class="relative "><img class="w-60 h-80 rounded-lg" src="images/cof4.jpg" alt="">
+                                <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
+                                <p class="text-[8px] font-semibold  text-primary-brown">Lorem ipsum dolor, sit amet </p>
+                            </div>
+                            <div class="flex justify-between mt-2">
+                                <p class="font-extrabold text-lg  text-primary-brown">Rs.199</p>
+                                <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
+                                    now</button>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
-                            <p class="text-[8px] font-semibold  text-primary-brown">Lorem ipsum dolor, sit amet </p>
+    
+    
+                        <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60 w-56">
+                            <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof5.jpg" alt="">
+                                <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
+                                <p class="text-[8px] text-primary-brown font-semibold">Lorem ipsum dolor, sit amet </p>
+                            </div>
+                            <div class="flex justify-between mt-2">
+                                <p class="font-extrabold  text-primary-brown">Rs.199</p>
+                                <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
+                                    now</button>
+                            </div>
                         </div>
-                        <div class="flex justify-between mt-2">
-                            <p class="font-extrabold  text-primary-brown">Rs.199</p>
-                            <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
-                                now</button>
+    
+    
+                        <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60 w-56">
+                            <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof6.jpg" alt="">
+                                <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
+                                <p class="text-[8px] font-semibold  text-primary-brown">Lorem ipsum dolor, sit amet </p>
+                            </div>
+                            <div class="flex justify-between mt-2">
+                                <p class="font-extrabold  text-primary-brown">Rs.199</p>
+                                <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
+                                    now</button>
+                            </div>
+                        </div>
+    
+    
+                        <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60 w-56">
+                            <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof4.jpg" alt="">
+                                <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
+                                <p class="text-[8px] font-semibold  text-primary-brown">Lorem ipsum dolor, sit amet </p>
+                            </div>
+                            <div class="flex justify-between mt-2">
+                                <p class="font-extrabold  text-primary-brown">Rs.199</p>
+                                <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
+                                    now</button>
+                            </div>
                         </div>
                     </div>
-
-
-                    <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60">
-                        <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof6.jpg" alt="">
-                            <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
+    
+                    <!-- MOBILE -->
+                    <div class="md:flex justify-center gap-5 mx-6 md:mx-auto w-full hidden">
+                        <div class="bg-light-coffee bg-opacity-60 p-2 rounded-lg md:h-auto w-56">
+                            <div class="relative "><img class="md:w-60 md:h-80 rounded-lg" src="images/cof4.jpg" alt="">
+                                <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
+                                <p class="text-[8px] font-semibold  text-primary-brown">Lorem ipsum dolor, sit amet </p>
+                            </div>
+                            <div class="flex justify-between mt-2">
+                                <p class="font-extrabold text-lg  text-primary-brown">Rs.199</p>
+                                <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
+                                    now</button>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
-                            <p class="text-[8px] font-semibold  text-primary-brown">Lorem ipsum dolor, sit amet </p>
+    
+    
+                        <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60 w-56">
+                            <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof5.jpg" alt="">
+                                <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
+                                <p class="text-[8px] text-primary-brown font-semibold">Lorem ipsum dolor, sit amet </p>
+                            </div>
+                            <div class="flex justify-between mt-2">
+                                <p class="font-extrabold  text-primary-brown">Rs.199</p>
+                                <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
+                                    now</button>
+                            </div>
                         </div>
-                        <div class="flex justify-between mt-2">
-                            <p class="font-extrabold  text-primary-brown">Rs.199</p>
-                            <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
-                                now</button>
+    
+    
+                        <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60 w-56">
+                            <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof6.jpg" alt="">
+                                <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
+                                <p class="text-[8px] font-semibold  text-primary-brown">Lorem ipsum dolor, sit amet </p>
+                            </div>
+                            <div class="flex justify-between mt-2">
+                                <p class="font-extrabold  text-primary-brown">Rs.199</p>
+                                <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
+                                    now</button>
+                            </div>
                         </div>
+    
+    
+                        <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60 w-56">
+                            <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof4.jpg" alt="">
+                                <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
+                                <p class="text-[8px] font-semibold  text-primary-brown">Lorem ipsum dolor, sit amet </p>
+                            </div>
+                            <div class="flex justify-between mt-2">
+                                <p class="font-extrabold  text-primary-brown">Rs.199</p>
+                                <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
+                                    now</button>
+                            </div>
+                        </div>
+    
                     </div>
-
-
-                    <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60">
-                        <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof3.jpg" alt="">
-                            <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
-                            <p class="text-[8px] font-semibold  text-primary-brown">Lorem ipsum dolor, sit amet </p>
-                        </div>
-                        <div class="flex justify-between mt-2">
-                            <p class="font-extrabold  text-primary-brown">Rs.199</p>
-                            <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
-                                now</button>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-light-coffee p-2 rounded-lg bg-opacity-60">
-                        <div class="relative"><img class="w-60 h-80 rounded-lg" src="images/cof4.jpg" alt="">
-                            <i class="fa-regular fa-heart absolute z-20  right-3 top-3 text-primary-white"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold  text-primary-brown">Lungo Coffee</h3>
-                            <p class="text-[8px] font-semibold  text-primary-brown">Lorem ipsum dolor, sit amet </p>
-                        </div>
-                        <div class="flex justify-between mt-2">
-                            <p class="font-extrabold  text-primary-brown">Rs.199</p>
-                            <button class="bg-primary-brown text-xs rounded-md px-3 py-2 text-primary-white">Order
-                                now</button>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
+
         </div>
     </section>
 
 
     <!-- check out our best coffee beans -->
     <section>
-        <div class="bg-primary-white ">
-            <div class="bg-coffee-bean bg-cover h-[40vh] py-20  flex flex-col items-center justify-center">
+        <div class="bg-primary-white font-poppins">
+            <div class="bg-coffee-bean bg-cover md:h-[40vh] h-32 py-20  flex flex-col items-center justify-center">
                 <div class="">
-                    <p class="text-5xl font-semibold text-primary-brown leading-tight pb-6">Check out our best
+                    <p class="md:text-5xl text:4xl font-semibold text-primary-brown leading-tight pb-6 md:block hidden">
+                        Check out our best
                         <br>coffee beans
                     </p>
-                    <button
-                        class="text-sm text-primary-white  bg-primary-brown px-10 rounded-full py-4">Explore
+                    <p class="md:text-5xl text-xl font-semibold text-primary-brown leading-relaxed pb-3 md:hidden ">
+                        Check out our best coffee
+                        <br>beans
+                    </p>
+                    <button class="text-sm text-primary-white  bg-primary-brown md:px-10 px-6 rounded-full py-4">Explore
                         our products >></button>
                 </div>
             </div>
@@ -247,7 +384,7 @@
 
 
 
-    <section class="my-16 max-w-[1250px] mx-auto mb-16">
+    <section class="my-16 max-w-[1250px] mx-auto mb-16 ">
 
         <div>
             <div>
@@ -261,7 +398,7 @@
                     <div>
                         <div class="w-96 h-52 bg-primary-white p-5 rounded-lg">
                             <div class="flex items-center gap-3 mb-3">
-                                <img class="rounded-full h-16 w-16 outline outline-[0.5px]" src="/images/jack.jpg"
+                                <img class="rounded-full h-16 w-16 outline outline-[0.5px]" src="./images/jack.jpg"
                                     alt="">
                                 <div class="flex gap-28">
                                     <div>
@@ -292,7 +429,7 @@
                     <div>
                         <div class="w-[450px] h-60 bg-primary-white p-5 rounded-lg">
                             <div class="flex items-center gap-3 mb-3">
-                                <img class="rounded-full h-16 w-16 outline outline-[0.5px]" src="/images/jack.jpg"
+                                <img class="rounded-full h-16 w-16 outline outline-[0.5px]" src="./images/jack.jpg"
                                     alt="">
                                 <div class="flex justify-between gap-40">
                                     <div>
@@ -325,7 +462,7 @@
                             <div class="w-96 h-52 bg-primary-white p-5 rounded-lg">
                                 <div class="flex items-center gap-3 mb-3">
                                     <img class="rounded-full h-16 w-16 outline outline-[0.5px]"
-                                        src="/images/jack.jpg" alt="">
+                                        src="/src/images/jack.jpg" alt="">
                                     <div class="flex justify-between gap-28">
                                         <div>
                                             <p class="font-semibold">Jane Adams</p>
@@ -359,9 +496,9 @@
     <!-- check out our best coffee beans -->
     <section>
         <div class="bg-primary-white">
-            <div class="bg-coffee-bean bg-cover h-[35vh] py-20 flex flex-col items-center justify-center">
+            <div class="bg-coffee-bean bg-cover md:h-[35vh] h-[6vh] py-20 flex flex-col items-center justify-center">
                 <div class=" text-center">
-                    <p class="text-2xl font-semibold text-primary-brown leading-tight pb-6">Join in and get 15%
+                    <p class="md:text-2xl text-lg font-semibold text-primary-brown leading-tight pb-6">Join in and get 15%
                         Off!
                     </p>
                     <p>
@@ -375,9 +512,9 @@
                             <i class="fa-regular fa-envelope opacity-50"></i>
                             <input placeholder="  Email address" type="email" class="w-80 border-none outline-none">
                         </div>
-                        
+
                         <button
-                            class="text-sm text-primary-white  bg-primary-brown px-12 rounded-full py-2 mx-auto ">Subscribe</button>
+                            class="text-sm text-primary-white  bg-primary-brown md:px-12 px-8 rounded-full md:py-2 py-[1px] mx-auto ">Subscribe</button>
                     </div>
                 </div>
             </div>
@@ -388,22 +525,27 @@
 
     <!-- FOOTER OF THE PAGE -->
 
-    <section class=" bg-primary-brown pt-10 pb-32">
-        <div class="flex justify-between max-w-[1100px] mx-auto ">
+    <section class=" bg-primary-brown pt-16 pb-32 font-poppins">
+        <div>
+            <div class="text-primary-white  text-3xl text-center"><span
+                    class="font-copperplate md:hidden block mb-8"><span class="text-4xl">C</span>OFFEE</span></div>
+        </div>
+        <div class="flex justify-between max-w-[1100px] md:mx-auto mx-6">
             <div>
-                <div class="text-primary-white  text-3xl font-semibold"><span class="font-serif">COFFEE</span></div>
+                <div class="text-primary-white  text-3xl"><span class="font-copperplate md:block hidden"><span
+                            class="text-4xl">C</span>OFFEE</span></div>
             </div>
             <div>
-                <ul class="text-primary-white flex flex-col gap-6 text-sm">
-                    <li><a class="font-bold text-xl" href="#">PRIVACY</a></li>
+                <ul class="text-primary-white flex flex-col md:gap-6 gap-4 md:text-sm text-[10px]">
+                    <li><a class="font-semibold md:text-xl text-sm" href="#">PRIVACY</a></li>
                     <li><a href="#">Terms of use</a></li>
                     <li><a href="#">Privacy Policy </a></li>
                     <li><a href="#">Cookies </a></li>
                 </ul>
             </div>
             <div>
-                <ul class="text-primary-white flex flex-col gap-6 text-sm">
-                    <li><a class="font-bold text-xl" href="#">SERVICE</a></li>
+                <ul class="text-primary-white flex flex-col md:gap-6 gap-4 md:text-sm text-[10px]">
+                    <li><a class="font-semibold md:text-xl text-sm" href="#">SERVICE</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Order ahead</a></li>
                     <li><a href="#">Menu </a></li>
@@ -411,8 +553,8 @@
             </div>
 
             <div>
-                <ul class="text-primary-white flex flex-col gap-6 text-sm">
-                    <li><a class="font-bold text-xl" href="#">ABOUT US</a></li>
+                <ul class="text-primary-white flex flex-col md:gap-6 gap-4 md:text-sm text-[10px]">
+                    <li><a class="font-semibold md:text-xl text-sm" href="#">ABOUT US</a></li>
                     <li><a href="#">Find a location</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Our story</a></li>
@@ -420,31 +562,36 @@
             </div>
 
             <div>
-                <ul class="text-primary-white flex flex-col gap-6 text-sm">
-                    <li><a class="font-bold text-xl" href="#">INFORMATION</a></li>
+                <ul class="text-primary-white flex flex-col md:gap-6 gap-4 md:text-sm text-[10px]">
+                    <li><a class="font-semibold md:text-xl text-sm" href="#">INFORMATION</a></li>
                     <li><a href="#">Plan and pricing</a></li>
                     <li><a href="#">Sell your product</a></li>
                     <li><a href="#">Jobs</a></li>
                 </ul>
             </div>
 
-            <div>
+            <div class="md:block hidden">
                 <ul class="text-primary-white flex flex-col gap-6">
-                    <li><a class="font-bold text-xl" href="#">SOCIAL MEDIA</a></li>
+                    <li><a class="font-semibold md:text-xl text-sm" href="#">SOCIAL MEDIA</a></li>
                     <div class="flex gap-5 text-xl">
                         <i class="fa-brands fa-twitter"></i>
                         <i class="fa-brands fa-facebook-f"></i>
                         <i class="fa-brands fa-square-instagram"></i>
                         <i class="fa-brands fa-linkedin-in"></i>
                     </div>
-                    
+
                 </ul>
             </div>
         </div>
-        
+
+        <div class="flex gap-5 text-xl justify-center md:hidden text-primary-white mt-8">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+
     </section>
-
-
 </body>
 
 </html>
